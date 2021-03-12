@@ -15,6 +15,15 @@ $colorW: #fff;
   text-decoration: $colorBlue;
   font-weight: bold;
 }
+@mixin introduction {
+  width: 50%;
+  color: $colorW;
+  font-family: Arial, Helvetica, sans-serif;
+  p {
+    padding-bottom: 10px;
+    width: 70%;
+  }
+}
 
 body {
   font-family: Verdana, sans-serif;
@@ -110,27 +119,15 @@ p {
     }
     }
     .introduction1 {
-    width: 50%;
-    color: $colorW;
+    @include introduction
     background-color: $colorBlue;
-    font-family: Arial, Helvetica, sans-serif;
-    p {
-      padding-bottom: 10px;
-      width: 70%;
-    }
     a {
       color: $colorW;
     }
     }
     .introduction2 {
-    width: 50%;
-    color: $colorW;
+    @include introduction
     background-color: dimgray;
-    font-family: Arial, Helvetica, sans-serif;
-    p {
-      padding-bottom: 10px;
-      width: 70%;
-    }
   }
 }
 .par_info {
